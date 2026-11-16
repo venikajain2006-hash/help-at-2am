@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help at 2 A.M. | Campus Support</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">🌙 Help at 2 A.M.</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#emergency">Emergency Help</a>
+    <a href="#contacts">Contacts</a>
+    <a href="#toolkit">Safety Toolkit</a>
+    <a href="#faq">FAQs</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <p class="tag">CAMPUS NIGHT SUPPORT</p>
+    <h1>You Are Never Alone,<br>Even at 2 A.M.</h1>
+    <p>Find guidance, support resources and important campus information whenever you need help.</p>
+    <a class="main-btn" href="#emergency">Explore Support</a>
+  </div>
+</section>
+
+<section class="section" id="emergency">
+  <h2>How Can We Help You?</h2>
+  <p class="subtitle">Choose the type of support you need.</p>
+
+  <div class="cards">
+    <div class="card">
+      <div class="emoji">🏥</div>
+      <h3>Medical Assistance</h3>
+      <p>Guidance for illness, injury or urgent medical concerns.</p>
+      <button onclick="showGuidance('medical')">Get Guidance</button>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🛡️</div>
+      <h3>Safety Concern</h3>
+      <p>Find guidance if you feel unsafe or notice a security issue.</p>
+      <button onclick="showGuidance('safety')">Get Guidance</button>
+    </div>
+
+    <div class="card">
+      <div class="emoji">💬</div>
+      <h3>General Support</h3>
+      <p>Find help for stress, loneliness or other concerns.</p>
+      <button onclick="showGuidance('general')">Get Guidance</button>
+    </div>
+  </div>
+
+  <div id="guidance" class="guidance">
+    Select a support category to see guidance here.
+  </div>
+</section>
+
+<section class="section contacts" id="contacts">
+  <h2>Important Campus Contacts</h2>
+  <p class="subtitle">Verify contact details with your institution before relying on them.</p>
+
+  <div class="cards">
+    <div class="card">
+      <div class="emoji">🚨</div>
+      <h3>Campus Security</h3>
+      <p>[Add verified number]</p>
+    </div>
+    <div class="card">
+      <div class="emoji">🏠</div>
+      <h3>Hostel Warden</h3>
+      <p>[Add verified number]</p>
+    </div>
+    <div class="card">
+      <div class="emoji">🩺</div>
+      <h3>Health Centre</h3>
+      <p>[Add verified number]</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="toolkit">
+  <h2>Night Safety Toolkit</h2>
+  <p class="subtitle">A quick checklist to help you prepare.</p>
+
+  <div class="toolkit">
+    <label><input type="checkbox"> Keep your phone charged.</label>
+    <label><input type="checkbox"> Save verified emergency contacts.</label>
+    <label><input type="checkbox"> Inform a trusted person if travelling late.</label>
+    <label><input type="checkbox"> Know the location of campus support offices.</label>
+    <label><input type="checkbox"> Stay in well-lit and familiar areas.</label>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <h2>Frequently Asked Questions</h2>
+
+  <details>
+    <summary>What should I do if I feel unsafe at night?</summary>
+    <p>Move to a safer, well-lit place if possible and contact verified campus security or local emergency services.</p>
+  </details>
+
+  <details>
+    <summary>What if I need medical assistance?</summary>
+    <p>Contact the verified campus health centre or local emergency medical services for urgent needs.</p>
+  </details>
+
+  <details>
+    <summary>Is this website an emergency service?</summary>
+    <p>No. It is an academic support prototype that provides information and guidance only.</p>
+  </details>
+</section>
+
+<section class="section about" id="about">
+  <h2>About This Project</h2>
+  <p>Help at 2 A.M. is a student design-thinking project focused on making campus support information easier to find during late-night situations.</p>
+  <p>Our goal is to improve awareness, accessibility and confidence in finding the right support.</p>
+</section>
+
+<footer>
+  <h3>🌙 Help at 2 A.M.</h3>
+  <p>A student design-thinking project.</p>
+  <p class="disclaimer">Disclaimer: This prototype does not provide emergency response, dispatch assistance or live location tracking.</p>
+  <p>© 2026 Help at 2 A.M. | Academic Prototype</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
