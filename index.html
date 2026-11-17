@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help at 2 A.M. | Campus Support</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">🌙 Help at 2 A.M.</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#emergency">Emergency Help</a>
+    <a href="#contacts">Contacts</a>
+    <a href="#toolkit">Safety Toolkit</a>
+    <a href="#faq">FAQs</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <p class="tag">CAMPUS NIGHT SUPPORT</p>
+    <h1>You Are Never Alone,<br>Even at 2 A.M.</h1>
+    <p>Find guidance, support resources and important campus information whenever you need help.</p>
+    <a class="main-btn" href="#emergency">Explore Support</a>
+  </div>
+</section>
+
+<section class="section" id="emergency">
+  <h2>How Can We Help You?</h2>
+  <p class="subtitle">Choose the type of support you need.</p>
+
+  <div class="cards">
+    <div class="card">
+      <div class="emoji">🏥</div>
+      <h3>Medical Assistance</h3>
+      <p>Guidance for illness, injury or urgent medical concerns.</p>
+      <button onclick="showGuidance('medical')">Get Guidance</button>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🛡️</div>
+      <h3>Safety Concern</h3>
+      <p>Find guidance if you feel unsafe or notice a security issue.</p>
+      <button onclick="showGuidance('safety')">Get Guidance</button>
+    </div>
+
+    <div class="card">
+      <div class="emoji">💬</div>
+      <h3>General Support</h3>
+      <p>Find help for stress, loneliness or other concerns.</p>
+      <button onclick="showGuidance('general')">Get Guidance</button>
+    </div>
+  </div>
+
+  <div id="guidance" class="guidance">
+    Select a support category to see guidance here.
+  </div>
+</section>
+
+<section class="section contacts" id="contacts">
+  <h2>Important Campus Contacts</h2>
+  <p class="subtitle">Verify contact details with your institution before relying on them.</p>
+
+
+<section id="contacts">
+    <h2>Campus Support Contacts</h2>
+
+    <div class="contacts-grid">
+
+        <!-- Campus Security -->
+        <div class="contact-card">
+            <div class="contact-icon">🚨</div>
+            <h3>Fire and Safety Cell</h3>
+            <p>[01824-444201]</p>
+        </div>
+
+        <!-- Hostel Warden -->
+        <div class="contact-card">
+            <div class="contact-icon">🏠</div>
+            <h3>Hostel Warden Support</h3>
+            <p>Select your hostel to find the warden's contact number.</p>
+
+            <label for="hostelSelect">Choose Your Hostel:</label>
+
+            <select id="hostelSelect" onchange="showHostelContact()">
+                <option value="">-- Select Your Hostel --</option>
+
+                <optgroup label="Boys Hostels">
+                    <option value="BH1">BH1</option>
+                    <option value="BH2">BH2</option>
+                    <option value="BH3">BH3</option>
+                    <option value="BH4">BH4</option>
+                    <option value="BH5">BH5</option>
+                    <option value="BH6">BH6</option>
+                    <option value="BH7">BH7</option>
+                    <option value="BH8">BH8</option>
+                    <option value="BH9">BH9</option>
+                    <option value="BH10">BH10</option>
+                    <option value="BH11">BS11</option>
+                    <option value="BH12">BS12</option>
+                    <option value="BH13">BS13</option>
+                </optgroup>
+
+                <optgroup label="Girls Hostels">
+                    <option value="GH1">GH1</option>
+                    <option value="GH2">GH2</option>
+                    <option value="GH3">GH3</option>
+                    <option value="GH4">GH4</option>
+                    <option value="GH5">GH5</option>
+                    <option value="GH6">GH6</option>
+                    <option value="GH7">GH7</option>
+                    <option value="GH8">GH8</option>
+                    <option value="GH9">GH9</option>
+                    <option value="GH10">GH10</option>
+                    <option value="GH11">GS11</option>
+                    <option value="GH12">GS12</option>
+                </optgroup>
+            </select>
+
+            <div id="hostelResult" class="hostel-result">
+                <p>Please select your hostel.</p>
+            </div>
+        </div>
+
+        <!-- Health Centre -->
+        <div class="contact-card">
+            <div class="contact-icon">🩺</div>
+            <h3>Health Centre</h3>
+            <p>[01824-444079]</p>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="section" id="toolkit">
+  <h2>Night Safety Toolkit</h2>
+  <p class="subtitle">A quick checklist to help you prepare.</p>
+
+  <div class="toolkit">
+    <label><input type="checkbox"> Keep your phone charged.</label>
+    <label><input type="checkbox"> Save verified emergency contacts.</label>
+    <label><input type="checkbox"> Inform a trusted person if travelling late.</label>
+    <label><input type="checkbox"> Know the location of campus support offices.</label>
+    <label><input type="checkbox"> Stay in well-lit and familiar areas.</label>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <h2>Frequently Asked Questions</h2>
+
+  <details>
+    <summary>What should I do if I feel unsafe at night?</summary>
+    <p>Move to a safer, well-lit place if possible and contact verified campus security or local emergency services.</p>
+  </details>
+
+  <details>
+    <summary>What if I need medical assistance?</summary>
+    <p>Contact the verified campus health centre or local emergency medical services for urgent needs.</p>
+  </details>
+
+  <details>
+    <summary>Is this website an emergency service?</summary>
+    <p>No. It is an academic support prototype that provides information and guidance only.</p>
+  </details>
+
+
+<details>
+    <summary>Can I access the website from my mobile phone?</summary>
+    <p>Yes! The website can be accessed through mobile phones, tablets and computers, making it easy for students to get help anytime.</p>
+</details>
+
+<details>
+    <summary>What should I do if I feel anxious or stressed at night?</summary>
+    <p>Try simple breathing exercises and grounding techniques. You can also seek guidance from the university's available student support services.</p>
+</details>
+
+<details>
+    <summary>Can I suggest improvements to the website?</summary>
+    <p>Yes! Students can share their suggestions and report incorrect or outdated information through the feedback section.</p>
+</details>
+
+</section>
+
+<section class="section about" id="about">
+  <h2>About This Project</h2>
+  <p>Help at 2 A.M. is a student design-thinking project focused on making campus support information easier to find during late-night situations.</p>
+  <p>Our goal is to improve awareness, accessibility and confidence in finding the right support.</p>
+</section>
+
+<footer>
+  <h3>🌙 Help at 2 A.M.</h3>
+  <p>A student design-thinking project.</p>
+  <p class="disclaimer">Disclaimer: This prototype does not provide emergency response, dispatch assistance or live location tracking.</p>
+  <p>© 2026 Help at 2 A.M. | Academic Prototype</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
